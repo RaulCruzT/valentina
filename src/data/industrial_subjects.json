@@ -1,5 +1,5 @@
 {
-  "semestre01": [
+  "Semestre 1": [
     {
       "name": "Física General",
       "abbreviation": "CFIS310",
@@ -21,7 +21,7 @@
       "area": "D"
     }
   ],
-  "semestre02": [
+  "Semestre 2": [
     {
       "name": "Física Experimental",
       "abbreviation": "CFIS328",
@@ -48,7 +48,7 @@
       "area": "E"
     }
   ],
-  "semestre03": [
+  "Semestre 3": [
     {
       "name": "Mecánica",
       "abbreviation": "CFIS332",
@@ -75,7 +75,7 @@
       "area": "C"
     }
   ],
-  "semestre04": [
+  "Semestre 4": [
     {
       "name": "Electricidad y Magnetismo",
       "abbreviation": "CFIS344",
@@ -102,7 +102,7 @@
       "area": "E"
     }
   ],
-  "semestre05": [
+  "Semestre 5": [
     {
       "name": "Métodos Cuantitativos",
       "abbreviation": "FMSP316",
@@ -129,7 +129,7 @@
       "area": "E"
     }
   ],
-  "semestre06": [
+  "Semestre 6": [
     {
       "name": "Minería de Datos",
       "abbreviation": "TDFI105",
@@ -161,7 +161,7 @@
       "area": "E"
     }
   ],
-  "semestre07": [
+  "Semestre 7": [
     {
       "name": "Gestión de la Transformación Digital",
       "abbreviation": "TDFI106",
@@ -193,7 +193,7 @@
       "area": "E"
     }
   ],
-  "semestre08": [
+  "Semestre 8": [
     {
       "name": "Evaluación de Proyectos",
       "abbreviation": "IIND414",
@@ -225,7 +225,7 @@
       "area": "C"
     }
   ],
-  "semestre09": [
+  "Semestre 9": [
     {
       "name": "Finanzas Corporativas",
       "abbreviation": "CIND216",
@@ -257,7 +257,7 @@
       "area": "B"
     }
   ],
-  "semestre10": [
+  "Semestre 10": [
     {
       "name": "Tópicos de Especialidad 2",
       "abbreviation": "CIND221",
