@@ -1,0 +1,277 @@
+{
+  "semestre01": [
+    {
+      "name": "Física General",
+      "abbreviation": "CFIS310",
+      "area": "A"
+    },
+    {
+      "name": "Introducción a las Matemáticas",
+      "abbreviation": "FMMP012",
+      "area": "A"
+    },
+    {
+      "name": "Introducción a la Programación",
+      "abbreviation": "TDFI101",
+      "area": "D"
+    },
+    {
+      "name": "Introducción a la Ingeniería",
+      "abbreviation": "TDFI102",
+      "area": "D"
+    }
+  ],
+  "semestre02": [
+    {
+      "name": "Física Experimental",
+      "abbreviation": "CFIS328",
+      "area": "A"
+    },
+    {
+      "name": "Cálculo Diferencial",
+      "abbreviation": "FMMP112",
+      "area": "A"
+    },
+    {
+      "name": "Química y Ambiente",
+      "abbreviation": "QUIM090",
+      "area": "A"
+    },
+    {
+      "name": "Base de Datos",
+      "abbreviation": "TDFI103",
+      "area": "D"
+    },
+    {
+      "name": "Habilidades Comunicativas",
+      "abbreviation": "CEGHC11",
+      "area": "E"
+    }
+  ],
+  "semestre03": [
+    {
+      "name": "Mecánica",
+      "abbreviation": "CFIS332",
+      "area": "A"
+    },
+    {
+      "name": "Cálculo Integral",
+      "abbreviation": "FMMP212",
+      "area": "A"
+    },
+    {
+      "name": "Compliance & Accountability",
+      "abbreviation": "TDFI104",
+      "area": "D"
+    },
+    {
+      "name": "Taller de Innovación y Emprendimiento 1",
+      "abbreviation": "ACAD101",
+      "area": "C"
+    },
+    {
+      "name": "Procesos Industriales",
+      "abbreviation": "CIND100",
+      "area": "C"
+    }
+  ],
+  "semestre04": [
+    {
+      "name": "Electricidad y Magnetismo",
+      "abbreviation": "CFIS344",
+      "area": "A"
+    },
+    {
+      "name": "Sistemas y Ecuaciones Diferenciales Lineales",
+      "abbreviation": "FMMP312",
+      "area": "A"
+    },
+    {
+      "name": "Taller de Innovación y Emprendimiento 2",
+      "abbreviation": "ACAD102",
+      "area": "C"
+    },
+    {
+      "name": "Práctica 1",
+      "abbreviation": "CIND311",
+      "area": "F"
+    },
+    {
+      "name": "Inglés 1",
+      "abbreviation": "ING119",
+      "area": "E"
+    }
+  ],
+  "semestre05": [
+    {
+      "name": "Métodos Cuantitativos",
+      "abbreviation": "FMSP316",
+      "area": "D"
+    },
+    {
+      "name": "Economía",
+      "abbreviation": "CIND411",
+      "area": "B"
+    },
+    {
+      "name": "Investigación de Operaciones",
+      "abbreviation": "CIND112",
+      "area": "C"
+    },
+    {
+      "name": "Economía Circular",
+      "abbreviation": "CIND111",
+      "area": "B"
+    },
+    {
+      "name": "Inglés 2",
+      "abbreviation": "ING129",
+      "area": "E"
+    }
+  ],
+  "semestre06": [
+    {
+      "name": "Minería de Datos",
+      "abbreviation": "TDFI105",
+      "area": "D"
+    },
+    {
+      "name": "Taller de Innovación y Emprendimiento 3",
+      "abbreviation": "ACAD103",
+      "area": "C"
+    },
+    {
+      "name": "Costos y Presupuestos",
+      "abbreviation": "IIND412",
+      "area": "C"
+    },
+    {
+      "name": "Redes y Sistemas Estocásticos en Ingeniería",
+      "abbreviation": "CIND211",
+      "area": "B"
+    },
+    {
+      "name": "Gestión de la Cadena de Suministros",
+      "abbreviation": "CIND113",
+      "area": "C"
+    },
+    {
+      "name": "Inglés 3",
+      "abbreviation": "ING239",
+      "area": "E"
+    }
+  ],
+  "semestre07": [
+    {
+      "name": "Gestión de la Transformación Digital",
+      "abbreviation": "TDFI106",
+      "area": "D"
+    },
+    {
+      "name": "Ingeniería Económica",
+      "abbreviation": "IIND413",
+      "area": "C"
+    },
+    {
+      "name": "Toma de Decisiones Bajo Incertidumbre",
+      "abbreviation": "CIND212",
+      "area": "B"
+    },
+    {
+      "name": "Toma de Decisiones en la Cadena de Suministro",
+      "abbreviation": "CIND114",
+      "area": "C"
+    },
+    {
+      "name": "Responsabilidad Social",
+      "abbreviation": "CEGRS14",
+      "area": "E"
+    },
+    {
+      "name": "Inglés 4",
+      "abbreviation": "ING249",
+      "area": "E"
+    }
+  ],
+  "semestre08": [
+    {
+      "name": "Evaluación de Proyectos",
+      "abbreviation": "IIND414",
+      "area": "C"
+    },
+    {
+      "name": "Simulación de Sistemas",
+      "abbreviation": "CIND213",
+      "area": "B"
+    },
+    {
+      "name": "Estrategia y Sustentabilidad en Cadena de Suministro",
+      "abbreviation": "CIND214",
+      "area": "B"
+    },
+    {
+      "name": "Analítica",
+      "abbreviation": "CIND215",
+      "area": "B"
+    },
+    {
+      "name": "Seminario de Licenciatura en Ciencias de la Ingeniería",
+      "abbreviation": "CIND312",
+      "area": "F"
+    },
+    {
+      "name": "Práctica 2",
+      "abbreviation": "CIND313",
+      "area": "C"
+    }
+  ],
+  "semestre09": [
+    {
+      "name": "Finanzas Corporativas",
+      "abbreviation": "CIND216",
+      "area": "B"
+    },
+    {
+      "name": "Inteligencia de Negocios",
+      "abbreviation": "CIND217",
+      "area": "B"
+    },
+    {
+      "name": "Marketing",
+      "abbreviation": "CIND218",
+      "area": "B"
+    },
+    {
+      "name": "Gestión Estratégica",
+      "abbreviation": "CIND219",
+      "area": "B"
+    },
+    {
+      "name": "Tópicos de Especialidad 1",
+      "abbreviation": "CIND220",
+      "area": "B"
+    },
+    {
+      "name": "Portafolio de Proyectos",
+      "abbreviation": "CIND314",
+      "area": "B"
+    }
+  ],
+  "semestre10": [
+    {
+      "name": "Tópicos de Especialidad 2",
+      "abbreviation": "CIND221",
+      "area": "B"
+    },
+    {
+      "name": "Tópicos de Especialidad 3",
+      "abbreviation": "CIND222",
+      "area": "B"
+    },
+    {
+      "name": "Proyecto de Título",
+      "abbreviation": "CIND315",
+      "area": "F"
+    }
+  ]
+}
