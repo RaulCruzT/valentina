@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   semestersNumber: number;
   industrial_subjects: Object;
   industrial_areas: Object;
+  areas;
 
   constructor() { }
 
@@ -29,10 +30,17 @@ export class HomeComponent implements OnInit {
     this.semestersNumber = Object.keys(industrial_subjects).length;
     this.semesters = Object.keys(industrial_subjects);
     this.subjects = Object.values(industrial_subjects);
+    this.areas = Object.values(industrial_areas);
+    console.log(this.areas)
   }
 
   getColor(area: string): string {
     let color = this.industrial_areas[area].color;
     return color;
+  }
+
+  setFooterWidth(): string {
+    let footerWidth = (this.semestersNumber * 100).toString() + 'px';
+    return footerWidth;
   }
 }

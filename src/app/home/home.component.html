@@ -1,16 +1,21 @@
 <div class="container-fluid">
-  <div class="col-10 malla">
-    <div class="tabla" *ngFor="let semester of semesters">
-      <div class="col columna">
-        <app-title [title]="semester"></app-title>
-        <!--div class="titulo">
-          {{semester}}
-        </div-->
-        <div class="ramos" *ngFor="let subject of industrial_subjects[semester]">
-          <app-subject [props]="[subject,getColor(subject.area)]"></app-subject>
-          <!--div>{{subject.name}}</div-->
+  <div class="container-malla">
+    <div class="malla">
+      <div class="tabla" *ngFor="let semester of semesters">
+        <div class="col columna">
+          <app-title [title]="semester"></app-title>
+          <div class="ramos" *ngFor="let subject of industrial_subjects[semester]">
+            <app-subject [props]="[subject,getColor(subject.area)]"></app-subject>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="footer" [ngStyle]="{'width': setFooterWidth()}">
+      <span *ngFor="let area of areas">
+        <span [ngStyle]="{'color': area.color}" class="areaItem">
+          {{area.name}}
+        </span>
+      </span>
     </div>
   </div>
 </div>
