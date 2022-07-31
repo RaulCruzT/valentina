@@ -1,0 +1,20 @@
+.subject {
+  width: 100px;
+  height: 100px;
+  font-size: 0.8rem;
+}
+
+.abbreviation {
+  color: #f2f2f2;
+  background-color: #4a4a4a;
+  height: 20%;
+}
+
+.name {
+  height: 80%;
+  color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

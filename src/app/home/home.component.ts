@@ -25,8 +25,14 @@ export class HomeComponent implements OnInit {
 
   setSemesters(): void {
     this.industrial_subjects = industrial_subjects;
+    this.industrial_areas = industrial_areas;
     this.semestersNumber = Object.keys(industrial_subjects).length;
     this.semesters = Object.keys(industrial_subjects);
     this.subjects = Object.values(industrial_subjects);
+  }
+
+  getColor(area: string): string {
+    let color = this.industrial_areas[area].color;
+    return color;
   }
 }

@@ -1,26 +1,26 @@
 {
   "A": {
     "name": "Ciencias básicas y/o Transversales",
-    "color": "pink"
+    "color": "#ff9aa2"
   },
   "B": {
     "name": "Ámbito 1: Sistemas productivos y de servicios",
-    "color": "green"
+    "color": "#ffb7b2"
   },
   "C": {
     "name": "Ámbito 2: Evaluación de Proyectos de Inversión",
-    "color": "gray"
+    "color": "#ffdac1"
   },
   "D": {
     "name": "Ámbito 3: Transformación Digital",
-    "color": "blue"
+    "color": "#e2f0cb"
   },
   "E": {
     "name": "Educación General e Inglés",
-    "color": "yellow"
+    "color": "#b5ead7"
   },
   "F": {
     "name": "Experiencias Integradoras",
-    "color": "purple"
+    "color": "#c7ceea"
   }
 }
