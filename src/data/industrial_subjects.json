@@ -3,275 +3,326 @@
     {
       "name": "Física General",
       "abbreviation": "CFIS310",
-      "area": "A"
+      "area": "A",
+      "requires": []
     },
     {
       "name": "Introducción a las Matemáticas",
       "abbreviation": "FMMP012",
-      "area": "A"
+      "area": "A",
+      "requires": []
     },
     {
       "name": "Introducción a la Programación",
       "abbreviation": "TDFI101",
-      "area": "D"
+      "area": "D",
+      "requires": []
     },
     {
       "name": "Introducción a la Ingeniería",
       "abbreviation": "TDFI102",
-      "area": "D"
+      "area": "D",
+      "requires": []
     }
   ],
   "Semestre 2": [
     {
       "name": "Física Experimental",
       "abbreviation": "CFIS328",
-      "area": "A"
+      "area": "A",
+      "requires": ["CFIS310","FMMP012"]
     },
     {
       "name": "Cálculo Diferencial",
       "abbreviation": "FMMP112",
-      "area": "A"
+      "area": "A",
+      "requires": ["FMMP012"]
     },
     {
       "name": "Química y Ambiente",
       "abbreviation": "QUIM090",
-      "area": "A"
+      "area": "A",
+      "requires": []
     },
     {
       "name": "Base de Datos",
       "abbreviation": "TDFI103",
-      "area": "D"
+      "area": "D",
+      "requires": ["TDFI102"]
     },
     {
       "name": "Habilidades Comunicativas",
       "abbreviation": "CEGHC11",
-      "area": "E"
+      "area": "E",
+      "requires": []
     }
   ],
   "Semestre 3": [
     {
       "name": "Mecánica",
       "abbreviation": "CFIS332",
-      "area": "A"
+      "area": "A",
+      "requires": ["CFIS328","FMMP112"]
     },
     {
       "name": "Cálculo Integral",
       "abbreviation": "FMMP212",
-      "area": "A"
+      "area": "A",
+      "requires": ["FMMP112"]
     },
     {
       "name": "Compliance & Accountability",
       "abbreviation": "TDFI104",
-      "area": "D"
+      "area": "D",
+      "requires": ["TDFI101"]
     },
     {
       "name": "Taller de Innovación y Emprendimiento 1",
       "abbreviation": "ACAD101",
-      "area": "C"
+      "area": "C",
+      "requires": ["TDFI101"]
     },
     {
       "name": "Procesos Industriales",
       "abbreviation": "CIND100",
-      "area": "C"
+      "area": "C",
+      "requires": ["CFIS310","QUIM090"]
     }
   ],
   "Semestre 4": [
     {
       "name": "Electricidad y Magnetismo",
       "abbreviation": "CFIS344",
-      "area": "A"
+      "area": "A",
+      "requires": ["FMMP212"]
     },
     {
       "name": "Sistemas y Ecuaciones Diferenciales Lineales",
       "abbreviation": "FMMP312",
-      "area": "A"
+      "area": "A",
+      "requires": ["FMMP212"]
     },
     {
       "name": "Taller de Innovación y Emprendimiento 2",
       "abbreviation": "ACAD102",
-      "area": "C"
+      "area": "C",
+      "requires": ["ACAD101"]
     },
     {
       "name": "Práctica 1",
       "abbreviation": "CIND311",
-      "area": "F"
+      "area": "F",
+      "requires": []
     },
     {
       "name": "Inglés 1",
       "abbreviation": "ING119",
-      "area": "E"
+      "area": "E",
+      "requires": []
     }
   ],
   "Semestre 5": [
     {
       "name": "Métodos Cuantitativos",
       "abbreviation": "FMSP316",
-      "area": "D"
+      "area": "D",
+      "requires": ["FMMP212"]
     },
     {
       "name": "Economía",
       "abbreviation": "CIND411",
-      "area": "B"
+      "area": "B",
+      "requires": ["FMMP212"]
     },
     {
       "name": "Investigación de Operaciones",
       "abbreviation": "CIND112",
-      "area": "C"
+      "area": "C",
+      "requires": ["FMMP212"]
     },
     {
       "name": "Economía Circular",
       "abbreviation": "CIND111",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND100"]
     },
     {
       "name": "Inglés 2",
       "abbreviation": "ING129",
-      "area": "E"
+      "area": "E",
+      "requires": ["ING119"]
     }
   ],
   "Semestre 6": [
     {
       "name": "Minería de Datos",
       "abbreviation": "TDFI105",
-      "area": "D"
+      "area": "D",
+      "requires": ["FMSP316","TDFI104"]
     },
     {
       "name": "Taller de Innovación y Emprendimiento 3",
       "abbreviation": "ACAD103",
-      "area": "C"
+      "area": "C",
+      "requires": ["ACAD102"]
     },
     {
       "name": "Costos y Presupuestos",
       "abbreviation": "IIND412",
-      "area": "C"
+      "area": "C",
+      "requires": ["FMMP212"]
     },
     {
       "name": "Redes y Sistemas Estocásticos en Ingeniería",
       "abbreviation": "CIND211",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND112","FMSP316"]
     },
     {
       "name": "Gestión de la Cadena de Suministros",
       "abbreviation": "CIND113",
-      "area": "C"
+      "area": "C",
+      "requires": ["CIND112"]
     },
     {
       "name": "Inglés 3",
       "abbreviation": "ING239",
-      "area": "E"
+      "area": "E",
+      "requires": ["ING239"]
     }
   ],
   "Semestre 7": [
     {
       "name": "Gestión de la Transformación Digital",
       "abbreviation": "TDFI106",
-      "area": "D"
+      "area": "D",
+      "requires": ["TDFI104"]
     },
     {
       "name": "Ingeniería Económica",
       "abbreviation": "IIND413",
-      "area": "C"
+      "area": "C",
+      "requires": ["IIND412"]
     },
     {
       "name": "Toma de Decisiones Bajo Incertidumbre",
       "abbreviation": "CIND212",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND211"]
     },
     {
       "name": "Toma de Decisiones en la Cadena de Suministro",
       "abbreviation": "CIND114",
-      "area": "C"
+      "area": "C",
+      "requires": ["CIND113"]
     },
     {
       "name": "Responsabilidad Social",
       "abbreviation": "CEGRS14",
-      "area": "E"
+      "area": "E",
+      "requires": []
     },
     {
       "name": "Inglés 4",
       "abbreviation": "ING249",
-      "area": "E"
+      "area": "E",
+      "requires": ["ING249"]
     }
   ],
   "Semestre 8": [
     {
       "name": "Evaluación de Proyectos",
       "abbreviation": "IIND414",
-      "area": "C"
+      "area": "C",
+      "requires": ["IIND413"]
     },
     {
       "name": "Simulación de Sistemas",
       "abbreviation": "CIND213",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND212"]
     },
     {
       "name": "Estrategia y Sustentabilidad en Cadena de Suministro",
       "abbreviation": "CIND214",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND212"]
     },
     {
       "name": "Analítica",
       "abbreviation": "CIND215",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND212"]
     },
     {
       "name": "Seminario de Licenciatura en Ciencias de la Ingeniería",
       "abbreviation": "CIND312",
-      "area": "F"
+      "area": "F",
+      "requires": []
     },
     {
       "name": "Práctica 2",
       "abbreviation": "CIND313",
-      "area": "C"
+      "area": "C",
+      "requires": []
     }
   ],
   "Semestre 9": [
     {
       "name": "Finanzas Corporativas",
       "abbreviation": "CIND216",
-      "area": "B"
+      "area": "B",
+      "requires": ["IIND413"]
     },
     {
       "name": "Inteligencia de Negocios",
       "abbreviation": "CIND217",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND215"]
     },
     {
       "name": "Marketing",
       "abbreviation": "CIND218",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND411"]
     },
     {
       "name": "Gestión Estratégica",
       "abbreviation": "CIND219",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND411"]
     },
     {
       "name": "Tópicos de Especialidad 1",
       "abbreviation": "CIND220",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND312"]
     },
     {
       "name": "Portafolio de Proyectos",
       "abbreviation": "CIND314",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND312"]
     }
   ],
   "Semestre 10": [
     {
       "name": "Tópicos de Especialidad 2",
       "abbreviation": "CIND221",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND312"]
     },
     {
       "name": "Tópicos de Especialidad 3",
       "abbreviation": "CIND222",
-      "area": "B"
+      "area": "B",
+      "requires": ["CIND312"]
     },
     {
       "name": "Proyecto de Título",
       "abbreviation": "CIND315",
-      "area": "F"
+      "area": "F",
+      "requires": ["CIND314"]
     }
   ]
 }
