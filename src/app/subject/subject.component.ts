@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-subject',
@@ -22,7 +21,6 @@ export class SubjectComponent implements OnInit {
   setVariables(): void {
     this.subject = this.props[0];
     this.color = this.props[1];
-    console.log(this.color);
   }
 
 }

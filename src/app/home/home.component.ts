@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import industrial_subjects from '../../data/industrial_subjects.json';
 import industrial_areas from '../../data/industrial_areas.json';
-import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -12,11 +11,14 @@ import { JsonPipe } from '@angular/common';
 export class HomeComponent implements OnInit {
 
   semesters: Array<string>;
-  subjects: Object;
+  subjects: Array<any>;
   semestersNumber: number;
   industrial_subjects: Object;
   industrial_areas: Object;
-  areas;
+  areas: Array<any>;
+
+  totalSubjects: number = 0;
+  approvedSubjects: Array<string>;
 
   constructor() { }
 
@@ -31,7 +33,7 @@ export class HomeComponent implements OnInit {
     this.semesters = Object.keys(industrial_subjects);
     this.subjects = Object.values(industrial_subjects);
     this.areas = Object.values(industrial_areas);
-    console.log(this.areas)
+    this.countSubjects();
   }
 
   getColor(area: string): string {
@@ -43,4 +45,31 @@ export class HomeComponent implements OnInit {
     let footerWidth = (this.semestersNumber * 100).toString() + 'px';
     return footerWidth;
   }
+
+  countSubjects(): void {
+    this.subjects.forEach(semester => {
+      this.totalSubjects += semester.length;
+    });
+  }
+
+  setSelectedSubjectValue(subject): void {
+    let counter: number = 0;
+
+    this.subjects.forEach(semester => {
+
+      let isSubjectHere = semester.find(s => s === subject);
+
+      if(isSubjectHere) {
+        let semesterName: string = this.semesters[counter];
+        let subjectIndex: number = semester.findIndex(s => s === subject);
+
+        let selectedValue: boolean = this.industrial_subjects[semesterName][subjectIndex].selected;
+
+        this.industrial_subjects[semesterName][subjectIndex].selected = !selectedValue;
+      }
+
+      counter +=1;
+    });
+  }
+
 }
