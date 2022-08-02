@@ -1,6 +1,7 @@
 <div class="subject" [ngStyle]="{'opacity': subject.selected ? 1 : 0.6}">
   <div class="abbreviation">
-    {{subject.abbreviation}}
+    <div>{{subject.abbreviation}}</div>
+    <div *ngIf="subject.selected"><i class="fa-solid fa-thumbs-up"></i></div>
   </div>
   <div class="name" [ngStyle]="{'background-color': color}">
     <div>{{subject.name}}</div>
