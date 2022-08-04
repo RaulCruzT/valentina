@@ -18,6 +18,7 @@ export class SubjectComponent implements OnInit {
     this.setVariables();
   }
 
+  // Sets variables values
   setVariables(): void {
     this.subject = this.props[0];
     this.color = this.props[1];
