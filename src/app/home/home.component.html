@@ -1,4 +1,7 @@
 <div class="container-fluid">
+  <div class="summary">
+    <div>hola</div>
+  </div>
   <div class="container-malla">
     <div class="malla">
       <div class="tabla" *ngFor="let semester of semesters">
@@ -17,5 +20,10 @@
         </span>
       </span>
     </div>
+  </div>
+  <div class="approved">
+      <circle-progress
+        [percent]="85"
+      ></circle-progress>
   </div>
 </div>
