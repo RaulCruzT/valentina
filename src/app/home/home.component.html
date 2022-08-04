@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="summary">
-    <div>hola</div>
+    <div></div>
   </div>
   <div class="container-malla">
     <div class="malla">
@@ -23,7 +23,9 @@
   </div>
   <div class="approved">
       <circle-progress
-        [percent]="85"
+        [percent]="setTitle()"
+        [subtitle]="setSubtitle()"
+        [outerStrokeColor]="setProgressColor()"
       ></circle-progress>
   </div>
 </div>

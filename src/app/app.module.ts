@@ -21,9 +21,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({
       radius: 100,
-      outerStrokeWidth: 16,
-      innerStrokeWidth: 0,
-      animationDuration: 300,
+      outerStrokeWidth: 8,
+      innerStrokeWidth: 2,
+      innerStrokeColor: "#4a4a4a",
+      animation: false,
       maxPercent: 100,
       responsive: true,
       subtitle:"Progreso",

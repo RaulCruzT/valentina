@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
 
   totalSubjects: number = 0;
   approvedSubjects: Array<string>;
+  approvedPercentage: number = 0;
 
   constructor() { }
 
@@ -89,6 +90,47 @@ export class HomeComponent implements OnInit {
     } else {
       this.approvedSubjects = this.approvedSubjects.filter(item => item !== subject.abbreviation);
     }
+  }
+
+  // Set title for progress circle
+  setTitle(): number {
+    let approvedSubjects: number = this.approvedSubjects.length;
+    let totalSubjects: number = this.totalSubjects;
+
+    this.approvedPercentage = Math.round(approvedSubjects/totalSubjects*100);
+
+    return this.approvedPercentage;
+  }
+
+  // Set subtitle for progress circle
+  setSubtitle(): string {
+    let approvedSubjectsString: string = this.approvedSubjects.length.toString();
+    let totalSubjectsString: string = this.totalSubjects.toString();
+
+    let subtitle: string = approvedSubjectsString + "/" + totalSubjectsString;
+
+    return subtitle;
+  }
+
+  // Set progress circle color
+  setProgressColor(): string {
+    let percentage: number = this.approvedPercentage;
+    let color: string;
+
+    if (percentage === 0) {
+      color = "#ff9aa2";
+    } else if (percentage < 25) {
+      color = "#ffb7b2";
+    } else if (percentage < 50) {
+      color = "#ffdac1";
+    } else if (percentage < 75) {
+      color = "#e2f0cb";
+    } else if (percentage < 100) {
+      color = "#b5ead7";
+    } else if (percentage === 100) {
+      color = "#c7ceea";
+    }
+    return color;
   }
 
 }
