@@ -1,4 +1,4 @@
-<div class="subject" [ngStyle]="{'opacity': subject.selected ? 1 : 0.6}">
+<div class="subject" [ngStyle]="{'opacity': (subject.selected && areRequirementsApproved()) ? 1 : 0.6}">
   <div class="abbreviation">
     <div>{{subject.abbreviation}}</div>
     <div *ngIf="subject.selected"><i class="fa-solid fa-thumbs-up"></i></div>

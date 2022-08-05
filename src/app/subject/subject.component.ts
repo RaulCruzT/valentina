@@ -9,8 +9,9 @@ export class SubjectComponent implements OnInit {
 
   subject;
   color: string;
+  approvedSubjects: Array<string>;
 
-  @Input() props;
+  @Input() props: Array<any>;
 
   constructor() { }
 
@@ -22,6 +23,23 @@ export class SubjectComponent implements OnInit {
   setVariables(): void {
     this.subject = this.props[0];
     this.color = this.props[1];
+    this.approvedSubjects = this.props[2];
+  }
+
+  // Checks if requirements are approved
+  areRequirementsApproved(): boolean {
+    let subjectRequirements: Array<string> = this.subject.requires;
+    let flagRequirements: boolean = true;
+
+    if(subjectRequirements !== []) {
+      subjectRequirements.forEach(abbreviation => {
+        if (!this.approvedSubjects.includes(abbreviation)) {
+          flagRequirements = false;
+        }
+      });
+    }
+
+    return flagRequirements;
   }
 
 }

@@ -6,7 +6,7 @@
         <div class="col columna">
           <app-title [title]="semester"></app-title>
           <div class="ramos" *ngFor="let subject of industrial_subjects[semester]">
-            <app-subject (click)="setSelectedSubjectValue(subject)" [props]="[subject,getColor(subject.area)]"></app-subject>
+            <app-subject (click)="setSelectedSubjectValue(subject)" [props]="[subject,getColor(subject.area), approvedSubjects]"></app-subject>
           </div>
         </div>
       </div>
