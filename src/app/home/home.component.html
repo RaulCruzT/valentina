@@ -1,7 +1,5 @@
 <div class="container-fluid">
-  <div class="summary">
-    <div></div>
-  </div>
+  <div class="summary"></div>
   <div class="container-malla">
     <div class="malla">
       <div class="tabla" *ngFor="let semester of semesters">
@@ -27,5 +25,8 @@
         [subtitle]="setSubtitle()"
         [outerStrokeColor]="setProgressColor()"
       ></circle-progress>
+      <div *ngIf="getDegree() === 'bachiller'" class="degree">Bachiller</div>
+      <div *ngIf="getDegree() === 'licenciado'" class="degree">Licenciatura</div>
+      <div *ngIf="getDegree() === 'titulado'" class="degree">Título profesional</div>
   </div>
 </div>

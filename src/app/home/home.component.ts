@@ -133,4 +133,41 @@ export class HomeComponent implements OnInit {
     return color;
   }
 
+  // Gets degree checking if all subjects are approved at 4, 8 and final semester
+  getDegree(): string {
+    let flagFirstDegree: boolean = true;
+    let flagSecondDegree: boolean = true;
+    let flagThirdDegree: boolean = true;
+    let semesterIndex: number = 0
+
+    this.subjects.forEach(semester => {
+      semester.forEach(subject => {
+        if (semesterIndex < 4) {
+          if (!this.approvedSubjects.includes(subject.abbreviation)) {
+            flagFirstDegree = false;
+          }
+        } else if(semesterIndex < 8) {
+          if (!this.approvedSubjects.includes(subject.abbreviation)) {
+            flagSecondDegree = false;
+          }
+        } else {
+          if (!this.approvedSubjects.includes(subject.abbreviation)) {
+            flagThirdDegree = false;
+          }
+        }
+      });
+      semesterIndex +=1;
+    });
+
+    if (flagThirdDegree && flagSecondDegree && flagFirstDegree) {
+      return "titulado";
+    } else if(flagSecondDegree && flagFirstDegree) {
+      return "licenciado";
+    } else if (flagFirstDegree) {
+      return "bachiller";
+    } else {
+      return "";
+    }
+  }
+
 }
